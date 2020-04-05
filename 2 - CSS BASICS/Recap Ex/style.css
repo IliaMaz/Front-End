@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    text-align: center;
+    background-color: linen;
+}
+h1 {
+    padding: 20px;
+    border-bottom: lightsalmon 2px solid;
+    margin-top: 200px;
+
+    margin-bottom: auto;
+    color: lightseagreen; 
+}
+
+h2, p {
+    color: lightseagreen;
+}
+
+p {
+    padding: 20px;
+
+}
+
+.fullstack {
+    background-color: salmon;
+    margin: auto;
+    margin-right: 800px;
+    margin-left: 800px;
+    border-radius: 3%;
+    height: 300px;
+
+}

@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    transition-duration: .3s;
+}
+
+body {
+    font-family: monospace;
+    /* Made using cssgradient.io */
+    background: rgb(210,210,210);
+    background: radial-gradient(circle, rgba(210,210,210,1) 0%, rgba(139,139,139,1) 100%);    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+
+.card {
+    width: 400px;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    top: 25%;
+
+}
+
+header img {
+    width: 400px;
+}
+
+.card:hover img {
+    transform: scale(1.2);
+    opacity: .5;
+
+}
+
+.mainsection {
+    background-color: #fff;
+    position: absolute;
+    top: 66%;
+    height: 380px;
+    width: 400px;
+    padding-left: 15px;
+    padding-right: 12px;
+    
+}
+
+main.mainsection:hover {
+    top: 30%;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: greenyellow;
+}
+
+p {
+    color: slategrey;
+    line-height: 25px;
+}
+
+footer {
+    margin-left: 5px;
+    color: slategrey;
+}
+
+#date {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    color: whitesmoke;
+    background-color: greenyellow;
+    text-align: center;
+    align-content: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
+#h3sticky {
+    position: absolute;
+    top: -6.7%;
+    left: 0;
+    margin: 0;
+    padding: auto;
+    background-color: greenyellow;
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: x-large;
+    color: whitesmoke;
+}

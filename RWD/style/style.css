@@ -1,0 +1,339 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.welcome {
+  background-image: url(../images/header.png);
+  background-position: center;
+  height: 100vh;
+}
+
+.welcome nav {
+  padding: 2%;
+}
+
+.welcome ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  padding: 2%;
+}
+
+.welcome ul li {
+  width: 100px;
+  text-align: center;
+  padding: 2%;
+  margin: 0 1%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.welcome ul a {
+  text-decoration: none;
+  color: white;
+  padding: 2%;
+}
+
+.welcome ul #ulink {
+  width: 100px;
+}
+
+.welcome ul #ulink:hover {
+  border: 2px white solid;
+  border-radius: 25px;
+}
+
+.welcometext {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 5%;
+}
+
+.welcometext h1 {
+  font-size: 20px;
+  margin: 25% 0 8%;
+  padding: 2%;
+}
+
+.welcometext h2 {
+  font-size: 30px;
+  margin-bottom: 5%;
+  padding: 2%;
+}
+
+.welcometext p {
+  padding: 0 13% 7%;
+}
+
+.welcometext .welcomebtn {
+  background-color: #ff4e50;
+  padding: 5%;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.cards {
+  padding: 3%;
+}
+
+.cards h3 {
+  font-size: 22px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 3%;
+}
+
+.cards .card {
+  background-image: url(../images/step1desk.png);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  border-radius: 5px;
+  margin-bottom: 3%;
+}
+
+.cards .card .cdtxt {
+  padding: 20% 5% 5%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.cards .card .cdtxt .step {
+  text-align: center;
+  padding: .5% 5%;
+  width: 30%;
+  background-color: #ff4e50;
+  border-radius: 15px;
+}
+
+.cards .card .cdtxt h4 {
+  padding: 5% 0;
+  font-size: 24px;
+}
+
+.cards .card .cdtxt .robtxt {
+  font-family: "Roboto", sans-serif;
+}
+
+.cards .card1 {
+  background-image: url(../images/step2desk.png);
+}
+
+.cards .card2 {
+  background-image: url(../images/step3desk.png);
+}
+
+.searchbox {
+  text-align: center;
+  padding: 1%;
+}
+
+.searchbox h3 {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.searchbox #psb {
+  margin: 2% 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.searchbox #sinput {
+  padding: 2.5% 3%;
+  margin-bottom: 3%;
+  width: 80%;
+}
+
+.searchbox #spartner {
+  background-color: #ff4e50;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5%;
+  width: 80%;
+  padding: 4%;
+  border-radius: 25px;
+  font-size: 14px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.foot {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.foot h5 {
+  font-size: 16px;
+  color: #FF4E50;
+  width: 100%;
+  margin: 5% auto;
+  padding-top: 4%;
+  border-top: 4px solid #FF4E50;
+}
+
+.foot h6 {
+  font-size: 14px;
+}
+
+.foot ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  margin: 1% auto 3%;
+}
+
+.foot li {
+  list-style-type: none;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.foot img {
+  margin: 5px 5px 5px 0;
+}
+
+#tabdesk {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #tabdesk {
+    display: unset;
+  }
+  #logo {
+    display: none;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #tabdesk {
+    height: 55px;
+    padding: 2%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+  }
+  .welcometext {
+    margin: 5% 10%;
+  }
+  .welcometext h2 {
+    font-size: 52px;
+  }
+  .welcometext .welcomebtn {
+    padding: 2%;
+    width: 40%;
+    margin: auto;
+  }
+  .welcometext p {
+    font-size: 24px;
+  }
+  .welcometext p .welcometext .welcomebtn {
+    font-size: 14px;
+  }
+  #cardz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 401px;
+  }
+  .cards .card {
+    width: 32%;
+    height: 100%;
+  }
+  .cards .card .cdtxt {
+    padding-top: 75%;
+  }
+  .cards .card1 .cdtxt {
+    padding-top: 85%;
+  }
+  .cards .card .cdtxt .step {
+    width: 40%;
+  }
+  .searchbox form {
+    width: 40%;
+  }
+  .searchbox #sinput {
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .searchbox #spartner {
+    width: 30%;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    margin-left: 2%;
+  }
+  .sbtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+  .foot ul {
+    display: unset;
+    width: unset;
+    margin: unset;
+  }
+  .foot h5 {
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+    width: unset;
+  }
+  .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4%;
+  }
+  .foot img {
+    height: 54px;
+    width: 149px;
+  }
+  .company ul {
+    padding: 0.5%;
+  }
+  .company ul li {
+    padding: 3%;
+    text-align: left;
+  }
+  footer {
+    border-top: 4px solid #FF4E50;
+  }
+  .searchbox {
+    margin: 10% auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */

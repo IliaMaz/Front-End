@@ -1,0 +1,39 @@
+@font-face {
+    font-family: doh;
+    src:url(font/Pokemon\ Hollow.ttf)
+
+}
+
+@font-face {
+    font-family: dohS;
+    src:url(font/Pokemon\ Solid.ttf)
+
+}
+
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    font-family: doh;
+    font-size: 7rem;
+    color: azure;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+p { 
+    width: 300px;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    margin-left: 43%;
+    padding: 3px;
+    font-family: dohS;
+    font-size: 1.3rem;
+    color: azure;
+    border: darkslategray 3px solid;
+    border-radius: 3%;
+}
+
+body {
+    background-color: lightslategray;
+}

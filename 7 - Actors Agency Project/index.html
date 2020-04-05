@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">FigurActors</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Availability</a>
+                <a class="nav-item nav-link" href="#">Actors</a>
+            </div>
+        </div>
+    </nav>
+    <section class="row" id="bumper"></section>
+    <hr class="col-11">
+    <article class="row d-flex justify-content-center">
+        <h1 class="display-4 col-11 ">Pick your STAR:</h1>
+    </article>
+    <main class="d-flex justify-content-center">
+        <section id="buttns" class="row d-inline-block justify-content-center">
+            <button id="maleBtn" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false"
+                autocomplete="off">
+                <i class="fas fa-male fa-2x filtBtn"><br>
+                    <p class="h5">
+                        Male
+                    </p>
+                </i>
+            </button>
+            <button id="femaleBtn" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false"
+                autocomplete="off">
+                <i class="fas fa-female fa-2x filtBtn"><br>
+                    <p class="h5">
+                        Female
+                    </p>
+                </i>
+            </button>
+            <button id="babyBtn" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false"
+                autocomplete="off">
+                <i class="fas fa-baby fa-2x filtBtn"><br>
+                    <p class="h5">
+                        Baby
+                    </p>
+                </i>
+            </button>
+        </section>
+    </main>
+    <section id="formF" class="mx-auto justify-content-between">
+        <hr class="col-11">
+        <form action="#fucktion.php">
+            <aside class="col-12 d-flex justify-content-between mx-auto ml-1">
+                <p class="h6 col-6 p-0">Company</p>
+                <p class="h6 col-6 p-0">Email</p>
+            </aside>
+            <article class="row col-12 d-flex justify-content-between ml-1">
+                <input type="text" name="" id="companyName" class="col-6 p-1" placeholder="Company name">
+                <input type="email" name="" id="email" class="col-6 p-1" placeholder="email@example.com">
+            </article>
+            <aside class="col-12 d-flex justify-content-between mx-auto ">
+                <p class="h6 col-6 p-0">Category</p>
+                <p class="h6 col-6 p-0">Actor</p>
+            </aside>
+            <article class="row col-12 d-flex justify-content-between ml-1">
+                <select name="" id="category" class="col-6 p-1">
+                    <option value="maleico">Male</option>
+                    <option value="femaleico">Female</option>
+                    <option value="babyico">Baby</option>
+                </select>
+                <select name="" id="Actor" class="col-6 p-1">
+                    <option value="" id="actor">Select your STAR</option>
+                </select>
+            </article>
+            <button type="submit button" class="btn btn-primary btn-sm my-4 ml-3">Ask for availability</button>
+        </form>
+    </section>
+    <section id="cards" class="mx-auto d-flex flex-wrap justify-content-between">
+        <div class="card d-none my-1" id="card" style="width: 22rem;">
+            <img src="https://randomuser.me/api/portraits/men/1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Example</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="row" id="bumper"></section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

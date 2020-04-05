@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+div.welcome {
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-size: 5rem;
+}
+
+
+main section {
+    padding-top: 20%;
+}
+
+.text-center {
+    color: white;
+}
+
+main div.container {
+    text-align: center;
+}
+
+.display-4 {
+    color: pink;
+}
+
+main div.container a {
+    background-color: pink;
+}
+
+.features {
+    text-align: center;
+    padding: 4rem;
+    margin-top: 3rem;
+}
+
+.features h3 {
+    padding: 2rem;
+}
+
+div.col i {
+    padding: 2rem;
+
+}
+
+footer p {
+    color: white;
+}
+
+footer i {
+    color: pink;
+    padding: .2rem;
+}
+
+footer {
+    padding: 2rem;
+}
+
+.feattext {
+    font-size: 1.5rem;
+}
+
+.h3 {
+    color: pink;
+}
+
+.fas {
+    color: pink;
+}
+
+section.testi h3 {
+    text-align: center;
+    padding: 1rem;
+}
+
+section.testi {
+    padding: 2rem;
+}
+
+.card-body .text-center {
+    color: black;
+}
+
+
+

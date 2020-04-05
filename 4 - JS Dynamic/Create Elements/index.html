@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    article {
+      border: 1px solid black;
+      width: 200px;
+      margin: 2rem auto;
+    }
+
+    .technology {
+      border: 1px solid blue;
+    }
+
+    .sport {
+      border: 1px solid green;
+    }
+  </style>
+
+</head>
+
+<body>
+  <section>
+    <h1>Create Elements</h1>
+    <article id="mockup">
+      <h2>
+        Sample
+      </h2>
+      <p>lorem</p>
+    </article>
+  </section>
+
+  <script>
+    // ADDIND CONTENT IS A TWO STEPS PROCESS
+    //1 - FIRST CREATE ELEMENT
+    const newArticle = document.createElement("article");
+    //2 - THEN APPEND THE ELEMENT
+    document.querySelector("section").appendChild(newArticle);
+
+    // Add a title to the newArticle
+    const newTitle = document.createElement("h2");
+    newArticle.appendChild(newTitle);
+    newTitle.innerText = "I am the new title";
+    newTitle.id = "titleH2";
+    newTitle.addEventListener("click", function () {
+      //newTitle.remove();
+      //document.querySelector("section").append(newTitle);
+      newTitle.style.display = "none";
+    })
+    newArticle.id = "example"
+
+    //My datas - JSON
+    const articlesArray = [
+      {
+        title: "My first Article",
+        content:
+          "Literally disrupt af slow-carb iceland banjo. Tumblr heirloom af helvetica PBR&B, fam pork belly gastropub ramps austin. VHS meh meditation occupy fanny pack. Shabby chic af kale chips YOLO try-hard glossier kinfolk lomo polaroid bicycle rights poutine scenester chillwave leggings food truck.",
+        category: "sport"
+      },
+      {
+        title: "My Second Article",
+        content:
+          "Four loko freegan typewriter beard marfa drinking vinegar knausgaard hashtag chambray health goth. PBR&B synth direct trade 3 wolf moon stumptown. Blog hoodie kickstarter food truck snackwave scenester shabby chic affogato readymade disrupt marfa. Mlkshk tattooed vegan cred leggings typewriter deep v live-edge. Migas cornhole meggings tacos flexitarian 90's sustainable biodiesel typewriter tumeric. Vegan mlkshk shabby chic, chambray keffiyeh tattooed echo park ennui.",
+        category: "technology"
+      }
+    ];
+    // I MASTER EVERYTHING
+    for (const article of articlesArray) {
+      console.log(article);
+      //article
+      const newArticleHTML = document.createElement("article");
+      document.querySelector("section").append(newArticleHTML);
+
+      //title
+      const newTitleHTML = document.createElement("h2");
+      newArticleHTML.append(newTitleHTML);
+      newTitleHTML.innerText = article.title;
+
+      //content
+      const newParaHTML = document.createElement("p");
+      newArticleHTML.append(newParaHTML);
+      newParaHTML.innerText = article.content;
+
+      //category
+      newArticleHTML.classList.add(article.category);
+    }
+
+    // I AM LAZY BUT IT DOES THE JOB.
+    // select the original
+    const myMockup = document.querySelector("#mockup");
+    //loop on the datas
+    for (const article of articlesArray) {
+      // clone the original
+      const articleClone = myMockup.cloneNode(true);
+      //insert the clone in the page
+      document.querySelector("section").append(articleClone);
+      //change its content
+      articleClone.querySelector("h2").innerText = article.title;
+      articleClone.querySelector("p").innerText = article.content;
+      articleClone.classList.add(article.category);
+      // rename the clone
+      article.id = "";
+    }
+    // kill the original
+    document.querySelector("#mockup").remove();
+  </script>
+  <script>
+    const newArticle = document.querySelector("#mockup");
+    for (const article of articles) {
+      const articleClone = newArticle.cloneNode(true);
+      document.querySelector("section").append(articleClone);
+      articleClone.querySelector("h2").innerText = article.title;
+      articleClone.querySelector("p").innerText = article.content;
+      articleClone.querySelector("a").href = article.url;
+      articleClone.classList.add(article.category);
+      article.id = "";
+    }
+    document.querySelector("#mockup").remove();
+
+    const myForm = document.querySelector('form');
+    const select = document.querySelector('#category');
+    myForm.addEventListener('submit', checkCat);
+
+    const articleProd = document.querySelectorAll('article');
+
+    function checkCat() {
+      event.preventDefault();
+      const selectValue = select.value.toLowerCase();
+      for (const art of articleProd) {
+        console.log(art.className + ' ' + selectValue);
+        if ((selectValue == 'all') || (art.classList[0] == selectValue)) {
+          art.classList.remove('hidden');
+        } else {
+          art.classList.add('hidden');
+        }
+      }
+    }
+
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: slategrey;
+}
+
+#cuby {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: aquamarine;
+    border-radius: 10px;    
+    ttop: 15px;
+    lleft: 15px;
+   
+}
